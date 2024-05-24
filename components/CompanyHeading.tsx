@@ -10,7 +10,7 @@ export function CompanyHeading() {
             <div className="flex flex-col p-4 rounded-lg shadow-md text-white w-[100%]">
                 <SidebarItem Icon={BuildingOffice2Icon} text="Draltdash" />
             </div>
-            <div className="md:space-y-2 md:text-[10px] w-[100%]">
+            <div className="md:space-y-2 md:text-md w-[100%]">
                 <SidebarItem Icon={HomeIcon} text="Dashboard" button={<ChevronRightIcon className="h-5 w-5" />} />
                 <SidebarItem Icon={ChartBarIcon} text="Key Metrics" button={<ChevronRightIcon className="h-5 w-5" />} />
                 <SidebarItem Icon={ChartBarIcon} text="Analytics" button={<ChevronRightIcon className="h-5 w-5" />} />
