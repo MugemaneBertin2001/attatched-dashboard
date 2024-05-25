@@ -4,10 +4,11 @@ import { FaChevronRight, FaChevronDown } from 'react-icons/fa';
 interface SidebarItemProps {
     Icon: React.ElementType;
     text: string;
+    button?: React.ReactNode;
     children?: React.ReactNode;
 }
 
-const SidebarItem: React.FC<SidebarItemProps> = ({ Icon, text, children }) => {
+const SidebarItem: React.FC<SidebarItemProps> = ({ Icon, text, button, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleAccordion = () => {
@@ -24,7 +25,10 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ Icon, text, children }) => {
                     <Icon className="h-6 w-6 mr-2" />
                     <span className="flex-grow">{text}</span>
                 </div>
-                {children && (isOpen ? <FaChevronDown className="h-5 w-5" /> : <FaChevronRight className="h-5 w-5" />)}
+                <div className="flex items-center">
+                    {button}
+                    {children && (isOpen ? <FaChevronDown className="h-5 w-5 ml-2" /> : <FaChevronRight className="h-5 w-5 ml-2" />)}
+                </div>
             </button>
             {isOpen && children && (
                 <div className="pl-8 pr-4 py-2 rounded-lg">
