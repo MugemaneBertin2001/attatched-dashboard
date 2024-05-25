@@ -10,9 +10,9 @@ interface UserInfoProps {
 
 const UserInfo: React.FC<UserInfoProps> = ({ userImage, fullName, email, onProfileClick }) => {
     return (
-        <div className="flex flex-col p-4 bg-purple-700 rounded-lg shadow-md text-white  w-[80%] mx-auto">
+        <div className="flex flex-col p-4 bg-[#3E3759] rounded-lg shadow-md text-white  w-[80%] mx-auto">
             <div className="flex items-center mb-4">
-                <div className="relative flex flex-row items-center space-x-4">
+                <div className="relative flex flex-row items-center space-x-10">
                     {userImage ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
@@ -26,7 +26,7 @@ const UserInfo: React.FC<UserInfoProps> = ({ userImage, fullName, email, onProfi
                     {onProfileClick && (
                         <button
                             onClick={onProfileClick}
-                            className="rounded-full p-2 bg-purple-800 text-white hover:cursor-pointer"
+                            className="rounded-full p-2 bg-[#3E3759] text-white hover:cursor-pointer"
                         >
                             <ArrowRightIcon className="w-6" />
                         </button>

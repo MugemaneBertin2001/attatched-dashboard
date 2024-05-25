@@ -7,7 +7,7 @@ function Dashboard() {
     };
 
     return (
-        <div className="p-8 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="p-8">
             <DashCard
                 title="Monthly Revenue"
                 amount="$25,000"

@@ -26,7 +26,7 @@ export function CompanyHeading() {
 
 const notification = () => {
     return (
-        <div className='rounded-full text-white bg-[#9455f4] p-2'>
+        <div className='rounded-full text-white bg-blue-900 p-2'>
             25
         </div>
     );

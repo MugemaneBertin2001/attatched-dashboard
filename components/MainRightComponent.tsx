@@ -1,7 +1,8 @@
+'use client'
 import React, { useState } from 'react';
 import TopComponent from './TopComponent';
 import Navbar from './Navbar';
-import Dashboard from './Dashboard';
+import MainComponent from './MainComponent';
 
 interface MainRightComponentProps {
     // Define props as needed
@@ -18,7 +19,7 @@ const MainRightComponent: React.FC<MainRightComponentProps> = () => {
         <div className="px-5 py-10">
             <TopComponent searchText={searchText} onSearchChange={handleSearchChange} />
             <Navbar></Navbar>
-            <Dashboard></Dashboard>
+            <MainComponent></MainComponent>
         </div>
         
     );
