@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { CompanyHeading } from './CompanyHeading';
@@ -15,14 +15,14 @@ const Sidebar: React.FC = () => {
         <>
             {/* Toggler button for the sidebar */}
             <button
-                className="md:hidden text-white p-5 bg-[#2E2559] fixed top-0 left-0 z-50"
+                className="lg:hidden text-white p-5 bg-[#2E2559] fixed top-0 left-0 z-50"
                 onClick={toggleSidebar}
             >
                 {isSidebarVisible ? <FaTimes size={20} /> : <FaBars size={20} />}
             </button>
 
             {/* Sidebar content, visible based on the screen size and state */}
-            <div className={`flex-col w-full md:w-[300px] min-w-[300px] text-white border-r py-3 min-h-screen bg-[#2E2559] fixed top-0 left-0  ${isSidebarVisible ? 'flex' : 'hidden'} md:flex`}>
+            <div className={`flex-col w-full lg:w-[300px] min-w-[300px] text-white border-r py-3 min-h-screen bg-[#2E2559] fixed top-0 left-0 ${isSidebarVisible ? 'flex' : 'hidden'} lg:flex`}>
                 <CompanyHeading />
                 <UserInfo 
                     fullName="John Doe"

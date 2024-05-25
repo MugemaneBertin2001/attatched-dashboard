@@ -4,11 +4,11 @@ import RightComponent from './RightComponent';
 
 const MainComponent = () => {
     return (
-        <div className="flex flex-col md:flex-row">
-            <div className="w-full md:md:w-3/5">
+        <div className="flex flex-col lg:flex-row">
+            <div className="w-full lg:lg:w-3/5">
                 <LeftComponent />
             </div>
-            <div className="w-full md:w-2/5 h-1/2">
+            <div className="w-full lg:w-2/5 h-1/2">
                 <RightComponent />
             </div>
         </div>
