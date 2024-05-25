@@ -13,10 +13,10 @@ const TotalOrder = () => {
         <p className="text-slate-400">sept 01 2023</p>
       </div>
       <AvatarGroup total={3}>
-        <Avatar>A</Avatar>
-        <Avatar>B</Avatar>
-        <Avatar>C</Avatar>
-        <Avatar>D</Avatar>
+        <Avatar></Avatar>
+        <Avatar></Avatar>
+        <Avatar></Avatar>
+        <Avatar></Avatar>
       </AvatarGroup>
     </div>
   );

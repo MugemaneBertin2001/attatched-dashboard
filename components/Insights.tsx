@@ -11,7 +11,7 @@ const Insights = () => {
                     description="Since last week"
                     percentage={20}
                     isIncrease={true}
-                    backgroundColor="bg-[#38bdf8]"
+                    backgroundColor="bg-[#D7E1FB]"
                 />
             </div>
             <div className='bg-[#f9a8d4] rounded-md'>
@@ -21,7 +21,7 @@ const Insights = () => {
                     description="Since last week"
                     percentage={15}
                     isIncrease={true}
-                    backgroundColor="bg-[#f9a8d4]"
+                    backgroundColor="bg-[#F9E0E1]"
                 />
             </div>
             <div className='bg-[#38bdf8] rounded-md'>
@@ -31,7 +31,7 @@ const Insights = () => {
                     description="Since last week"
                     percentage={5}
                     isIncrease={false}
-                    backgroundColor="bg-[#38bdf8]"
+                    backgroundColor="bg-[#DAEAEA]"
                 />
             </div>
         </div>

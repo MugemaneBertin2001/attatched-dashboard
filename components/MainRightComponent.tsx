@@ -16,7 +16,7 @@ const MainRightComponent: React.FC<MainRightComponentProps> = () => {
     };
 
     return (
-        <div className="px-5 py-10">
+        <div className="px-5 py-10 md:ml-[300px]">
             <TopComponent searchText={searchText} onSearchChange={handleSearchChange} />
             <Navbar></Navbar>
             <MainComponent></MainComponent>

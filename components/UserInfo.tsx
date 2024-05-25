@@ -10,7 +10,7 @@ interface UserInfoProps {
 
 const UserInfo: React.FC<UserInfoProps> = ({ userImage, fullName, email, onProfileClick }) => {
     return (
-        <div className="flex flex-col p-4 bg-[#3E3759] rounded-lg shadow-md text-white  w-[80%] mx-auto">
+        <div className="flex flex-col p-4 bg-[#3E3759] rounded-lg shadow-md text-white mt-auto  w-[80%] mx-auto">
             <div className="flex items-center mb-4">
                 <div className="relative flex flex-row items-center space-x-10">
                     {userImage ? (

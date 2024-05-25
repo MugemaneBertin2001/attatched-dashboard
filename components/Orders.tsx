@@ -14,7 +14,7 @@ import { Download, MoreVert, Sort } from "@mui/icons-material";
 const orders = [
   {
     id: 2,
-    customer: { avatar: "B", name: "Luna" },
+    customer: {  name: "Luna" },
     orderNumber: "34336",
     cash: "$150",
     date: "24 May",
@@ -24,7 +24,7 @@ const orders = [
   },
   {
     id: 4,
-    customer: { avatar: "Y", name: "Solomon" },
+    customer: {name: "Solomon" },
     orderNumber: "34338",
     cash: "$450",
     date: "26 May",
@@ -35,7 +35,7 @@ const orders = [
 
   {
     id: 3,
-    customer: { avatar: "G", name: "Stella" },
+    customer: {name: "Stella" },
     orderNumber: "34337",
     cash: "$350",
     date: "25 May",
@@ -46,7 +46,7 @@ const orders = [
 
   {
     id: 1,
-    customer: { avatar: "R", name: "Soleil" },
+    customer: {name: "Soleil" },
     orderNumber: "34335",
     cash: "$250",
     date: "23 May",
@@ -97,7 +97,7 @@ const HandleColor = ({ order }: { order: IOrder }) => {
 
 const Orders = () => {
   return (
-    <div className=" mt-6 bg-white shadow-2xl p-2 rounded-lg">
+    <div className=" mt-6 bg-white text-black shadow-2xl p-2 rounded-lg">
       <div className="flex justify-between items-center mb-4">
         <h5>Orders List</h5>
         <div>
@@ -123,9 +123,9 @@ const Orders = () => {
         <TableBody>
           {orders.map((order, index) => (
             <TableRow key={order.id}>
-              <TableCell className="font-medium">{index + 1}</TableCell>
+              <TableCell className="font-medium">{index}</TableCell>
               <TableCell className="flex items-center gap-1">
-                <Avatar className="">{order.customer.avatar}</Avatar>
+                <Avatar className=""></Avatar>
                 <p>{order.customer.name}</p>
               </TableCell>
               <TableCell className="text-blue-400">
